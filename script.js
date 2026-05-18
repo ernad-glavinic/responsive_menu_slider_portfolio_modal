@@ -73,4 +73,16 @@ portfolioButtons.forEach(portfolioBtn => {
     portfolioBtn.addEventListener('click', () => portfolioSort(portfolioBtn));
 })
 
-// Test commit
+// This is code for OPENING MODAL
+let modalWindow = document.querySelector('.popup-modal');
+let overlay = document.querySelector('.overlay');
+
+const openModal = () => {
+    modalWindow.style.display = 'block';
+    overlay.style.display = 'block';
+}
+
+const closeModal = () => {
+    modalWindow.style.display = 'none';
+    overlay.style.display = 'none';
+}
