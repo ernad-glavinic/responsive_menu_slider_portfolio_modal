@@ -47,19 +47,22 @@ h1, h2, h3 {
 	padding: 10px;
 }
 
-@media (max-width: 1000px) {
-	.header button {
+.header ul.active {
 		display: block;
-	}
-
-	.header ul {
-		display: none;
 		background-color: lightsteelblue;
 		position: absolute;
 	    width: 100%;
 	    left: 0;
 	    right: 0;
 	    top: 119px;
+}
+
+@media (max-width: 1000px) {
+	.header button {
+		display: block;
+	}
+	.header ul{
+		display: none;
 	}
 }
 
