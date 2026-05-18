@@ -51,3 +51,20 @@ leftBtn.addEventListener('click', moveLeft);
 
 // Function will hide all images
 const displayNone = elements => elements.forEach(img => img.style.display = 'none');
+
+// This is code for FILTER CATEGORIES
+const portfolioSort = button => {
+    let category = button.getAttribute('data-category');
+    let portfolioItems = document.querySelectorAll('.portfolio-single-item');
+
+    portfolioItems.forEach(item => item.style.display = 'none');
+
+    if(category === 'sve') portfolioItems.forEach(item => item.style.display = 'block');
+
+    portfolioItems.forEach(item => {
+       if(item.getAttribute('data-category').includes(category)){
+            item.style.display = 'block';
+        }
+    });
+}
+
