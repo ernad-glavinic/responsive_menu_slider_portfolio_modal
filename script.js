@@ -68,3 +68,9 @@ const portfolioSort = button => {
     });
 }
 
+let portfolioButtons = document.querySelectorAll('.portfolio-categories button');
+portfolioButtons.forEach(portfolioBtn => {
+    portfolioBtn.addEventListener('click', () => portfolioSort(portfolioBtn));
+})
+
+// Test commit
